@@ -511,12 +511,10 @@ footer{
     /* display: none; */
     position: relative;
     width: 90%;
-    margin: 0 auto;
 }
 .ft h1{
     padding: 1rem 0;
     font-size: 30px;
-Width: 80%
 }
 
 
@@ -532,7 +530,7 @@ Width: 80%
 }
 .txt{
     padding-top: 2rem;
-    width: 100%;
+    width: 90%;
 }
 .im,  .ima{
     width: 14%;
@@ -541,7 +539,7 @@ Width: 80%
     width: 16%;
 }
 .rz{
-    padding: 0;
+    padding: 0!important;
 }
 .pd{
     padding-bottom: 15px;
