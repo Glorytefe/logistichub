@@ -38,9 +38,9 @@
           url('/font/Gilroy-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
           url('/font/Gilroy-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
           url('/font/Gilroy-ExtraBold.svg#svgFontName') format('svg'); /* Legacy iOS */
-          /* font-weight: bold; */
+          font-weight: bolder;
           font-style: normal;
-        font-display: swap;
+        /* font-display: swap; */
 
   }
 
@@ -58,10 +58,11 @@ h1, h2, h3, h4, h6{
 
 
 /* nav starts */
+
 header{
     font-family: questrial;
     letter-spacing: 1px;
-    font-weight: lighter;
+    font-weight: 500;
 }
 .logos{
     width: 6rem;
@@ -89,11 +90,13 @@ header{
     background-position: right;
     background-size: 72%;
     background-repeat: no-repeat;
+    padding-bottom: 5rem;
+    margin-top: -20px;
 
 }
 .ban1{
     /* padding: 5rem 0; */
-    min-height: 90vh;
+    min-height: 80vh;
     position: relative;
 }
 .txt{
@@ -102,31 +105,33 @@ header{
     z-index: 2;
     color: var(--blutxt);
 }
+.wd{
+    width: 90%;
+}
 .ft h1{
-    font-size: 55px;
+    font-size: 59px;
     font-weight: 600;
     font-family: Gilroy;
+    color: var(--blkcol);
+    /* padding-bottom: 5px; */
 
 }
 .txt h6{
-    font-family: questrial;
-    letter-spacing: 1px;
+    font-family: Questrial;
+    letter-spacing: 0.8px;
     font-weight: 600;
     line-height: 30px;
-    font-size: 16px;
+    font-size: 15px;
 }
-.wd
-{
-    width: 90%;
-}
+
 .ban-img{
     position: absolute;
     width: 40%;
-    top: 18%;
+    top: 17%;
     right: 3%;
 }
 .btns img{
-    width: 9.5rem;
+    width: 10rem;
     padding-right: 15px;
 }
 /* banner ends */
@@ -136,6 +141,7 @@ header{
 }
 .txt h2{
     font-family: Gilroy;
+    font-weight: bolder;
     font-size: 34px;
 }
 .txt h5{
@@ -147,10 +153,11 @@ header{
     font-size: 19px;
 }
 .gn p{
-    /* width: 12rem; */
-    font-family: Gilroy;
     font-size: 18px;
-    /* text-align: center; */
+}
+.gn{
+    font-weight: 900;
+    font-family: Gilroy;
 }
 
 .gn img{
@@ -176,7 +183,7 @@ header{
 .pnk small{
     color: var(--sorangetxt);
 }
-.grm small{
+.grn small{
     color: var(--sgreentxt);
 }
 
@@ -207,12 +214,13 @@ margin-right: 20px;
 }
 .imgb{
     width: 50%;
+    margin-left: -10px;
 }
 .imga img{
     width: 100%;
 }
 .imgb img{
-    width: 90%;
+    width: 85%;
     margin-bottom: 20px;
 }
 /* service2 ends */
@@ -245,6 +253,9 @@ margin-right: 20px;
     font-size: 12px;
     color: var(--grytxt2);
    
+}
+.rz{
+    padding-bottom: 2rem;
 }
 /* values ends */
 /* brand */
@@ -288,7 +299,8 @@ margin: 0 10px;
     width: 100%;
 }
 .pts h3{
-    font-size: 32px;
+    font-family: Gilroy;
+    font-size: 40px;
     font-weight: bolder;
 }
 .pts{
@@ -318,7 +330,7 @@ margin: 0 10px;
     padding: 2rem 0 4rem 0;
 }
 .text-header h2 {
-    font-size: 38px;
+    font-size: 35px;
     color: var(--blutxt);
     font-family: Gilroy;
     max-width: 50%;
@@ -334,44 +346,54 @@ margin: 0 10px;
   }
   
   .text-content {
-    display: flex;
+    /* display: flex; */
     padding-top: 30px;
-    width: 80%;
-    align-items: center;
+    /* width: 90%; */
+    /* align-items: center; */
     margin: auto;
   }
   
-  .testimonials h3 {
+  .tt h3 {
     font-family: questrial;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--grytxt2);
-    line-height: 1.4;
+    line-height: 25px;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
+    height: 150px;
+
   }
   
-  .testimonials {
+  .tt {
     border: 1px solid rgba(223, 223, 223, 0.7);
     padding: 30px 20px;
     margin: 6px 10px;
     border-radius: 12px;
-    /* justify-content: center; */
+    max-width: 400px;
+    width: 90%;
   }
+ 
   
   .testimonials-details {
     background: var(--testdet);
     padding: 15px 30px;
+    /* max-width: 280px;
+    width: 100%; */
     margin-top: 30px;
     border-radius: 12px;
 
   }
   
   .testimonials-details h2 {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: Gilroy;
+    color: var(--grytxt2);
   }
   
   .testimonials-details p {
-      color: var(--blutxt);
+    font-family: questrial;
+    font-size: 17px;
+    color: var(--blutxt);
     margin-bottom: 0px;
   }
 /*  */
@@ -469,9 +491,16 @@ footer{
         max-width: 80%;
         font-size: 25px;
     }
+    .tt h3{
+        height: 200px;
+    }
 }
-
-@media screen and (max-width:731px){
+@media screen and (min-width:768px) and (max-width:1010px) {
+    .tt h3{
+        height: 320px;
+    }
+}
+@media screen and (max-width:738px){
 .ban1{
     min-height: 100vh;
     flex-direction: column;
@@ -481,15 +510,18 @@ footer{
 .ban-img{
     /* display: none; */
     position: relative;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 .ft h1{
     padding: 1rem 0;
-    font-size: 35px;
+    font-size: 30px;
 }
+
+
 .txt h6{
     padding-bottom: 1rem;
+    font-size: 15px;
 }
 .service{
     padding: 1rem 0;
@@ -501,8 +533,17 @@ footer{
     padding-top: 2rem;
     width: 100%;
 }
-.im, .imb, .ima{
+.im,  .ima{
     width: 14%;
+}
+.imb{
+    width: 16%;
+}
+.rz{
+    padding: 0;
+}
+.pd{
+    padding-bottom: 15px;
 }
 .brnd{
     padding: 0;
@@ -516,9 +557,15 @@ footer{
 .gn p{
     width: 75%;
     margin: 0 auto;
+    /* font-size: 15px; */
 }
 .gn{
-    margin: 20px auto;
+    margin: 20px 0;
+    /* width: 70%!important; */
+}
+
+.gn img{
+    width: 20%;
 }
 .text-content{
     flex-wrap: wrap;
@@ -535,5 +582,18 @@ footer{
 }
 .txts{
     max-width: 300%;
+}
+.imgb{
+  margin-left: -20px;
+}
+.tt h3{
+    height: 150px;
+}
+.text-header{
+    font-size: 14px;
+}
+.tt{
+    /* max-width: 100px; */
+    width: 100%;
 }
 }
