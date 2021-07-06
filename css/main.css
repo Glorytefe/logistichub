@@ -514,6 +514,9 @@ footer{
     width: 100%;
     padding: 0 20px;
 }
+.banner{
+   padding-bottom: 0;
+}
 .ft h1{
     padding: 1rem 0;
     font-size: 30px;
